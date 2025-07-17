@@ -17,16 +17,17 @@ Embed Shopify Forms easily into your Hydrogen storefront using this lightweight 
 Install the package via npm or yarn:
 
 ```bash
-npm install @shopify-hydrogen/form-embed
+npm install shopify-hydrogen-form-embed
 # or
-yarn add @shopify-hydrogen/form-embed
+yarn add shopify-hydrogen-form-embed
 ```
 
 ## 🚀 Usage
 
 #### 🧁 Basic Example
+
 ```tsx
-import { ShopifyForm } from '@shopify-hydrogen/form-embed';
+import { ShopifyForm } from 'shopify-hydrogen-form-embed';
 
 export default function ContactPage() {
   return (
@@ -54,7 +55,7 @@ export default function ContactPage() {
     'data-forms-padding-bottom': '20',
     'data-forms-text-color': '#333333',
     'data-forms-button-background-color': '#000000',
-    'data-forms-button-label-color': '#ffffff'
+    'data-forms-button-label-color': '#ffffff',
   }}
 />
 ```
