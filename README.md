@@ -1,4 +1,4 @@
-# @shopify-hydrogen/form-embed
+# shopify-hydrogen-form-embed
 
 Embed Shopify Forms easily into your Hydrogen storefront using this lightweight React component. This package handles the loading of the Shopify Forms script and applies styling automatically—so you can focus on building great experiences.
 
