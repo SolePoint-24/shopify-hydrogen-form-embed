@@ -14,12 +14,31 @@ Embed Shopify Forms easily into your Hydrogen storefront using this lightweight 
 
 ## 📦 Installation
 
-Install the package via npm or yarn:
+1. Install the package via npm or yarn:
 
 ```bash
 npm install shopify-hydrogen-form-embed
 # or
 yarn add shopify-hydrogen-form-embed
+```
+
+2. Configure content security policies. In file entry.server.tsx add following CSP. These needs to be added as shopify-forms is dependent on these external libraries
+
+```
+{
+  defaultSrc: [
+    'self',
+    'https://js.hcaptcha.com',
+    'https://fonts.shopifycdn.com',
+    'https://newassets.hcaptcha.com'
+  ],
+  connectSrc: [
+    'self',
+    'https://forms.shopifyapps.com',
+    'https://otlp-http-production.shopifysvc.com',
+    'https://notify.bugsnag.com'
+  ]
+}
 ```
 
 ## 🚀 Usage
