@@ -22,7 +22,7 @@ GIT_TAG="${TAG_PREFIX}${VERSION}"
 
 # Step 3: Commit & tag
 echo "🏷️ Creating git tag $GIT_TAG..."
-git add package.json bun.lock
+git add package.json package-lock.json
 
 # Step 4: Push tag and commit
 echo "🚀 Pushing commit and tag to origin..."
