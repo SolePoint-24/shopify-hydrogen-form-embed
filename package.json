@@ -5,7 +5,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "release:patch": "bash ./scripts/release.sh patch",
+    "release:minor": "bash ./scripts/release.sh minor",
+    "release:major": "bash ./scripts/release.sh major",
+    "publish:npm": "npm publish --access public"
   },
   "keywords": [
     "shopify",
@@ -25,5 +30,14 @@
     "@types/react": "^18.0.0",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed.git"
+  },
+  "homepage": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed",
+  "bugs": {
+    "url": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed/issues"
+  },
+  "sideEffects": false
 }

@@ -35,10 +35,10 @@ const useShopifyForm = ({ shopUrl }: { shopUrl: string }): ScriptStatus => {
         // ✅ Dynamically load the Forms loader script
         loadShopifyFormScript();
       } else {
-        if (currentRetryCount > maxRetryCount) {
+        if (currentRetryCount <= maxRetryCount) {
           setTimeout(injectShopifyScript, 100);
+          currentRetryCount++;
         }
-        currentRetryCount++;
       }
     };
     injectShopifyScript();
